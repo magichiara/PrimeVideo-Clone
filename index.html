@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeVideo-Clone</title>
+    <script
+      src="https://kit.fontawesome.com/e7dafb53f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js" type="module"></script>
+    <script defer src="./utils.js" type="module"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- HEADER -->
+    <header>
+      <div class="header-elements">
+        <img
+          class="header-logo"
+          src="https://amazonuk.gcs-web.com/system/files-encrypted/nasdaq_kms/inline-images/Prime_Video_Logo.png"
+          alt="logo"
+        />
+        <h3 class="header-browse">Browse</h3>
+        <div class="header-icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="material-symbols-outlined fav-icon"> favorite </span>
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+      <!-- MENU -->
+      <div class="browse-container open-close">
+        <span class="voice">Home</span>
+        <span class="voice">Store</span>
+        <span class="voice">Channels</span>
+        <span class="voice">Categories</span>
+        <span class="voice">My Stuff</span>
+      </div>
+      <!-- SEARCH -->
+      <div class="search-container open-close">
+        <input
+          class="input-search"
+          type="text"
+          name="search"
+          placeholder="Cerca serie TV"
+        />
+      </div>
+      <!-- FAV -->
+      <div class="fav-container open-close">
+        <ul></ul>
+      </div>
+      <!-- AUTH -->
+      <div class="auth-container">
+        <h5 class="logout voice">Logout</h5>
+        <h5 class="signin-voice voice">Sign In</h5>
+        <h5 class="signup-voice voice">Sign Up</h5>
+      </div>
+    </header>
+    <div class="login-modal open-close hidden">
+      <div class="login-modalrel">
+        <h3 class="login-title">Inserisci le tue credenziali</h3>
+
+        <form id="login-form" name="loginform">
+          <input
+            type="text"
+            class="login-input"
+            name="username"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="password"
+            class="login-input"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input class="submit" type="submit" value="SEND" />
+        </form>
+        <span class="material-symbols-outlined close-modal"> close </span>
+      </div>
+    </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="carousel">
+        <i class="fa-solid fa-circle-arrow-left prev"></i>
+        <i class="fa-solid fa-circle-arrow-right next"></i>
+      </div>
+    </section>
+    <!-- GALLERY -->
+
+    <section class="first-gallery gallery">
+      <div class="gallery-title">
+        <img src="./prime_logo.png" alt="titlelogo" class="title-logo" />
+        <h3 class="title">Most Popular of last 10 years</h3>
+      </div>
+      <div class="first-container container"></div>
+    </section>
+
+    <section class="second-gallery gallery">
+      <div class="gallery-title">
+        <img src="./prime_logo.png" alt="titlelogo" class="title-logo" />
+        <h3 class="title">Best of ‘90 and ‘00”</h3>
+      </div>
+
+      <div class="second-container container"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <img
+        class="logo-footer"
+        src="https://amazonuk.gcs-web.com/system/files-encrypted/nasdaq_kms/inline-images/Prime_Video_Logo.png"
+        alt="logo"
+      />
+      <div class="footer-text">
+        <a class="footer-link" href="">Terms and Privacy Notice</a>
+        <a class="footer-link" href="">Send us feedback</a>
+        <a class="footer-link" href="">Help</a>
+        <a class="footer-link" href="">Cookies Notice</a>
+        <h4 class="footer-copy">
+          © 1995-2022, Amazon.com, Inc. or its affiliates
+        </h4>
+      </div>
+    </footer>
+  </body>
+</html>
